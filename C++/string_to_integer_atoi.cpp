@@ -17,7 +17,6 @@ public:
             if (s[i] == '-') sign = -1;
             i++;
         }
-
         // Step 3 & 4: Read digits and clamp
         long result = 0;
         while (i < n && isdigit(s[i])) {
