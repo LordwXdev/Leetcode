@@ -42,7 +42,7 @@ bool isMatch(char* s, char* p) {
     
     bool result = dp[m][n];
     
-    // Free memory
+    // Free memory//
     for (int i = 0; i <= m; i++) {
         free(dp[i]);
     }
