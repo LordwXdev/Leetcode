@@ -1,13 +1,15 @@
 #include<stdio.h>
 
 
-struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2) {
+struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2)
+{
+    
     struct ListNode dummy;
     struct ListNode* tail = &dummy;
     dummy.next = NULL;
 
-    while (l1 && l2) {
-        if (l1->val < l2->val) {
+    while (l1 != NULL && l2 != NULL) {
+        if (l1->val <= l2->val) {
             tail->next = l1;
             l1 = l1->next;
         } else {
@@ -17,10 +19,24 @@ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2) {
         tail = tail->next;
     }
 
-    if (l1)
+    if (l1 != NULL)
         tail->next = l1;
     else
         tail->next = l2;
 
     return dummy.next;
+}
+
+struct ListNode* mergeKLists(struct ListNode** lists, int listsSize) {
+
+    if (listsSize == 0)
+        return NULL;
+
+    struct ListNode* result = lists[0];
+
+    for (int i = 1; i < listsSize; i++) {
+        result = mergeTwoLists(result, lists[i]);
+    }
+
+    return result;
 }
