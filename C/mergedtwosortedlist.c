@@ -1,5 +1,9 @@
 #include<stdio.h>
 
+struct ListNode {
+    int val;
+    struct ListNode* next;
+};
 
 struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2) {
     struct ListNode dummy = {0, NULL};
