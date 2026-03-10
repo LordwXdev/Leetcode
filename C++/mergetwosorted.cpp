@@ -1,10 +1,10 @@
 #include<iostream>
 
 using namespace std;
-struct ListNode{
+struct ListNode {
     int val;
-    int next;
-
+    ListNode* next;
+    ListNode(int x) : val(x), next(nullptr) {}
 };
 
 class Solution {
