@@ -33,7 +33,7 @@ public:
                     return std::max(maxLeft1, maxLeft2);
                 }
             } else if (maxLeft1 > minRight2) {
-                high = partition1 - 1; // Move left in nums1
+                high = partition1 - 1; // Move left in nums1.
             } else {
                 low = partition1 + 1;  // Move right in nums1
             }
