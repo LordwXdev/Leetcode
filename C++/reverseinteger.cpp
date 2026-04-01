@@ -9,11 +9,7 @@ public:
         while (x != 0) {
             int digit = x % 10;
             x /= 10;
-            
-            // Check for overflow before multiplying by 10
-            // INT_MAX = 2147483647, INT_MIN = -2147483648
-            // If result > INT_MAX/10, then result*10 will overflow
-            // If result == INT_MAX/10, then result*10+digit might overflow
+        
             
             if (result > INT_MAX / 10 || (result == INT_MAX / 10 && digit > 7)) {
                 return 0;
