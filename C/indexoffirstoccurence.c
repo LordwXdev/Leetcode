@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 int strStr(char* haystack, char* needle) {
     int hLen = strlen(haystack);
     int nLen = strlen(needle);
