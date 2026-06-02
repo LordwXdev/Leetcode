@@ -13,12 +13,10 @@ public:
         int wordCount = words.size();
         int totalLen = wordLen * wordCount;
         int sLen = s.length();
-
         // build frequency map of words
         unordered_map<string, int> wordFreq;
         for (const string& w : words)
             wordFreq[w]++;
-
         // try every starting index from 0 to sLen - totalLen
         for (int i = 0; i <= sLen - totalLen; i++) {
             unordered_map<string, int> seen;
@@ -29,7 +27,6 @@ public:
 
                 if (wordFreq.find(word) == wordFreq.end())
                     break; // word not in list at all
-
                 seen[word]++;
 
                 if (seen[word] > wordFreq[word])
