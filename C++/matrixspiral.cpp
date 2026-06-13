@@ -5,10 +5,8 @@ public:
     vector<int> spiralOrder(vector<vector<int>>& matrix) {
         vector<int> result;
         if (matrix.empty()) return result;
-
         int top = 0, bottom = (int)matrix.size() - 1;
         int left = 0, right = (int)matrix[0].size() - 1;
-
         while (top <= bottom && left <= right) {
             // go right
             for (int i = left; i <= right; i++)
