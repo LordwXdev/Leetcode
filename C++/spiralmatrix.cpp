@@ -37,7 +37,7 @@ public:
     }
 };
 
-int main() {
+/*int main() {
     Solution sol;
 
     auto result = sol.generateMatrix(3);
@@ -57,4 +57,4 @@ int main() {
     cout << "n=1: [[" << result2[0][0] << "]]\n";
 
     return 0;
-}
+}*/
