@@ -9,7 +9,7 @@ struct ListNode {
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
-        ListNode dummy(0);
+        ListNode dummy;
         dummy.next = head;
         
         ListNode* first = &dummy;
