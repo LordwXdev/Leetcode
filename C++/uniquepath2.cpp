@@ -22,6 +22,8 @@ public:
                     dp[j] += dp[j - 1]; // add ways coming from the left
                 }
                 // if j == 0 and not obstacle, dp[j] just keeps value from row above (came from up)
+
+                
             }
         }
         
