@@ -21,7 +21,7 @@ public:
         long result = 0;
         while (i < n && isdigit(s[i])) {
             result = result * 10 + (s[i++] - '0');
-            // Early clamp to avoid overflow in 'result' itself
+            // Early clamp to avoid overflow in 'result' itself.
             if (result * sign <= INT_MIN) return INT_MIN;
             if (result * sign >= INT_MAX) return INT_MAX;
         }
