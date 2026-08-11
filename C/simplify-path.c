@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 char* simplifyPath(char* path) {
     int n = strlen(path);
