@@ -1,4 +1,7 @@
 #include<iostream>
+#include<vector>
+
+using namespace std;
 class Solution {
 public:
     int findFirst(vector<int>& nums, int target) {
