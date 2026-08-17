@@ -1,3 +1,4 @@
+#include<iostream>
 #include<vector>
 
 using namespace std;
@@ -22,3 +23,8 @@ public:
         return n + 1;
     }
 };
+
+int main()
+{
+    
+}
