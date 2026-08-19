@@ -30,3 +30,7 @@ public:
         return result;
     }
 };
+int main()
+{
+    
+}
