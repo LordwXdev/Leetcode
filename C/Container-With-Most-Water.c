@@ -4,6 +4,7 @@ int maxArea(int* height, int n) {
     int left = 0, right = n - 1;
     int maxWater = 0;
 
+
     while (left < right) {
         int width = right - left;
         int h = height[left] < height[right] ? height[left] : height[right];
