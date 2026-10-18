@@ -16,8 +16,8 @@ int climbStairs(int n) {
     return prev1;
 }
 
-int main() {
+/*int main() {
     printf("%d\n", climbStairs(2)); // 2
     printf("%d\n", climbStairs(3)); // 3
     return 0;
-}
+}*/
